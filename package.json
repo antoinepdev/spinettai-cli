@@ -1,6 +1,6 @@
 {
   "name": "spinettai-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI que instala skills en el proyecto desde el que la ejecutas y las enlaza en los agentes de IA que elijas",
   "license": "MIT",
   "author": "Antoine Peña",
