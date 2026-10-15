@@ -1,6 +1,7 @@
 ---
 name: vitest
-description: Reglas para escribir o revisar tests con el framework Vitest. Usa esta skill solo cuando el trabajo sea específicamente con Vitest: se mencione Vitest, haya configuración de Vitest, o se usen describe, it, test, it.for o la API de Vitest (expect, beforeEach, vi.*).
+description: Reglas de estructura para tests con el framework Vitest. Úsala siempre que escribas, revises o modifiques tests: se mencione Vitest o se vean describe, it, test, it.for, expect, vi.*.
+
 ---
 
 # Vitest
