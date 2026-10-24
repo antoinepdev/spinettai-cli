@@ -5,20 +5,20 @@ type AgentName = 'opencode' | 'claude-code' | 'gemini-cli' | 'codex'
 
 interface AgentProps {
 	name: AgentName
-	relativePath: string[]
+	agentConfigDir: string
 }
 
 export class Agent {
 	readonly name: AgentName
-	readonly #relativePath: string[]
+	readonly #agentConfigDir: string
 
-	constructor({ name, relativePath }: AgentProps) {
+	constructor({ name, agentConfigDir }: AgentProps) {
 		this.name = name
-		this.#relativePath = relativePath
+		this.#agentConfigDir = agentConfigDir
 	}
 
 	skillsDir(destRoot: string): string {
-		return join(destRoot, ...this.#relativePath)
+		return join(destRoot, this.#agentConfigDir, 'skills')
 	}
 
 	linkPathFor(skill: Skill, destRoot: string): string {
