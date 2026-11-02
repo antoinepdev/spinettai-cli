@@ -3,6 +3,7 @@
 import { join } from 'node:path'
 
 import { select } from 'inquirer-select-pro'
+
 import { InstallSkills } from './application/use-cases/InstallSkills.ts'
 import { LinkSkillsToAgents } from './application/use-cases/LinkSkillsToAgents.ts'
 import { ScanCatalog } from './application/use-cases/ScanCatalog.ts'
